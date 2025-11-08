@@ -1,23 +1,18 @@
 // import WithAuthDashboard from './Dashboard'
 import PureComp from "./utils/pureComp";
 import React,{useState,useEffect} from 'react';
+// import UnControlled from './'
+import Controlled from './Components/Controlled'
+
 
 const App = () => {
-    const[name, setName] = useState('');
 
-    useEffect(()=>{
-        const interval = setInterval(()=>{
-            setName('Shruthi')
-        },1000)
-        return ()=> clearInterval(interval)
-    })
-
-    console.log('APP rendered')
   return (
     // <WithAuthDashboard />
     <>
-      <PureComp name={name} />
-      <PureComp name={name} />
+    <Controlled/>
+
+
     </>
   );
 };

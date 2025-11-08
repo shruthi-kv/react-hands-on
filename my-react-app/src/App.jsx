@@ -1,7 +1,10 @@
 import Form from "./Portals/Form";
+import EventBubble from './EventBubbling/EventBubble';
+import EventCapture from './EventBubbling/EventCapture';
+
 
 const App = () => {
-  return <Form />;
+  return <EventCapture />;
 };
 
 export default App;

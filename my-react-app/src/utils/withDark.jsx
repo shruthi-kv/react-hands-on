@@ -1,7 +1,7 @@
 const withDarkTheme = (WrappedComponent) =>{
     const styles = {
-        backgroundColor : '#212529',
-        color: '#eee'
+        backgroundColor : 'black',
+        color:'white'
     }
     return function(props){
         return<div style={styles}>

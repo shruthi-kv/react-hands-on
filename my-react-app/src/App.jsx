@@ -4,10 +4,13 @@ import EventCapture from './EventBubbling/EventCapture';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 import Parent from './Hooks/Parent'
 import Counter from './Hooks/Reducer';
+import Memo from './Hooks/Memo'
+import Callback from './Hooks/Callback';
+
 
 const App = () => {
   return (
-    <Counter/>
+    <Callback/>
   );
 };
 

@@ -6,11 +6,12 @@ import Parent from './Hooks/Parent'
 import Counter from './Hooks/Reducer';
 import Memo from './Hooks/Memo'
 import Callback from './Hooks/Callback';
+import Hooks from './Sun/Hooks';
 
 
 const App = () => {
   return (
-    <Callback/>
+    <Hooks/>
   );
 };
 

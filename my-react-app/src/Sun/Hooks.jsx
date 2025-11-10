@@ -1,36 +1,30 @@
-import React, {useRef,useState,useCallback} from 'react';
-import ShowCount from './ShowCount';
-import Count from './Count';
-import Title from './Title';
+import React, { useState } from "react";
 
+function NumberPrinter() {
+  const numbers = [10, 20, 30, 40, 50]; // your array
+  const [index, setIndex] = useState(0); // track current number
+  const [output, setOutput] = useState([]); // store printed numbers
 
-const Hooks = () =>{
-    const[age,setAge] = useState(0);
-    const[salary,setSalary] = useState(0);
+  const handleClick = () => {
+    if (index < numbers.length) {
+      setOutput([...output, numbers[index]]);
+      setIndex(index + 1);
+    } else {
+      alert("All numbers printed!");
+    }
+  };
 
-    const incrementAge = useCallback(() =>{
-        console.log('increment age is called')
-        setAge((prev)=>prev+1)
-    },[age])
-
-    const incrementSalary =useCallback(() =>{
-        console.log('increment salary is called')
-        setSalary((prev)=>prev+1000)
-    },[salary]) 
-
-
-    return(
-        <>
-      
-        <Title title={"Age and Salary are below"} />
-        <ShowCount count ={age}/>
-        <Count text={'Age'} handleClick = {incrementAge}/>
-        <ShowCount count ={salary}/>
-        <Count text={'Salary'} handleClick = {incrementSalary}/>
-        </>
-    )
-
+  return (
+    <div style={{ padding: "20px" }}>
+      <button onClick={handleClick}>Print Next Number</button>
+      <h3>Printed Numbers:</h3>
+      <ul>
+        {output.map((num, i) => (
+          <li key={i}>{num}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default Hooks;
-
+export default NumberPrinter;

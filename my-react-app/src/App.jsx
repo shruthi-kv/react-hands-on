@@ -6,13 +6,18 @@ import Parent from './Hooks/Parent'
 import Counter from './Hooks/Reducer';
 import Memo from './Hooks/Memo'
 import Callback from './Hooks/Callback';
-import Hooks from './Sun/Hooks';
+import NumberPrinter from './Sun/Hooks';
+import PrintNum from './Hands/PrintNum';
 
 
 const App = () => {
   return (
-    <Hooks/>
+    <PrintNum/>
   );
 };
 
 export default App;
+
+
+
+

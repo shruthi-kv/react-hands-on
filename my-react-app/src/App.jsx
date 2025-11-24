@@ -1,22 +1,9 @@
-import Button from './Practice/Button';
-
+import Controlled from './Practice/Controlled';
 
 const App = () => {
-  let buttonProps = {
-    isDisabled : false,
-  }
-  let varient = {
-    primary : {
-      background: 'blue',
-      color:'white'
-    },
-    secondary : {
-      background : 'grey',
-      color:'black'
-    }
-  }
+  
   return (
-    <Button buttonProps={buttonProps} varient={varient}/>
+    <Controlled/>
   );
 };
 

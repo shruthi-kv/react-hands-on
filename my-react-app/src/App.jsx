@@ -1,9 +1,9 @@
-import Checkbox1 from './Practice/Checkbox1';
+import ToDo from './Practice/ToDo';
 
 const App = () => {
   
   return (
-    <Checkbox1/>
+    <ToDo/>
   );
 };
 

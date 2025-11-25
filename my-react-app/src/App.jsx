@@ -1,9 +1,9 @@
-import Controlled from './Practice/Controlled';
+import Checkbox1 from './Practice/Checkbox1';
 
 const App = () => {
   
   return (
-    <Controlled/>
+    <Checkbox1/>
   );
 };
 

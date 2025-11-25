@@ -13,18 +13,31 @@ const Checkbox1 = () => {
         [...prev,item]
     )
   }
+  const handleSelectAll = () =>{
+    if(selected.length === names.length){
+      setSelected([])
+    }else{
+      setSelected([...names])
+    }
+    
+  }
+
   return <>{
     names.map((item)=>{
         return(
             <div key={item}>
                 <label>
-                    <input type='checkbox'  onChange={()=>handleOnChange(item)}/>
+                    <input type='checkbox' checked={selected.includes(item)} onChange={()=>handleOnChange(item)}/>
                      {item}
                 </label>
             </div>
         )
     })
   }
+  <label>Select All
+    <input type='checkbox' checked={selected.length === names.length} onChange={handleSelectAll}/>
+  </label>
+
   {
     selected.length>0 && selected.map((item)=>{
         return(

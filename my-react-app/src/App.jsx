@@ -1,9 +1,9 @@
-import ToggleFax from './Practice/ToggleFaq';
+import Password from './Practice/Password';
 
 const App = () => {
   
   return (
-    <ToggleFax/>
+    <Password/>
   );
 };
 

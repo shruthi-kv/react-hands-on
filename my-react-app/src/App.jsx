@@ -1,9 +1,9 @@
-import Toggle from './Practice/Toggle';
+import ToggleFax from './Practice/ToggleFaq';
 
 const App = () => {
   
   return (
-    <Toggle/>
+    <ToggleFax/>
   );
 };
 

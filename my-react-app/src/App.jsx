@@ -1,9 +1,9 @@
-import ToDo from './Practice/ToDo';
+import Toggle from './Practice/Toggle';
 
 const App = () => {
   
   return (
-    <ToDo/>
+    <Toggle/>
   );
 };
 

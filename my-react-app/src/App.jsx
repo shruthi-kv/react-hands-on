@@ -1,7 +1,7 @@
 import StarRating from './Practice/Star';
 import { useState } from "react";
 import Rating from './Practice/Rating'
-
+import Count from './Practice/count';
 const App = () => {
   
  const [rating, setRating] = useState(0);
@@ -13,6 +13,8 @@ const App = () => {
       <p>Selected rating: {rating}</p>
       <hr/>
       <Rating/>
+      <hr/>
+      <Count/>
     </div>
   );
 };

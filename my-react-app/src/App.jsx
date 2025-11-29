@@ -2,6 +2,7 @@ import StarRating from './Practice/Star';
 import { useState } from "react";
 import Rating from './Practice/Rating'
 import Count from './Practice/count';
+import StopWatch from './Practice/StopWatch';
 const App = () => {
   
  const [rating, setRating] = useState(0);
@@ -15,6 +16,8 @@ const App = () => {
       <Rating/>
       <hr/>
       <Count/>
+      <hr/>
+      <StopWatch/>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import Todo from './HandsOn/Todo';
 import Check from './HandsOn/Check';
 import Time from './HandsOn/Time';
+import Accordian from './HandsOn/Accordian';
 
 const Demo = ()=>{
 
@@ -9,7 +10,8 @@ const Demo = ()=>{
         <>
         {/* <Todo/> */}
         {/* <Check/> */}
-        <Time/>
+        {/* <Time/> */}
+        <Accordian/>
         </>
     )
 }

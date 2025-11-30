@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Accordian = () => {
   const [showContent, setShowContnet] = useState(null);
+  const[isshow,setIsShow] = useState(false);
+  const[text,setText] = useState('')
 
   const data = [
     { title: "What is React?", content: "React is a JavaScript library." },
@@ -16,6 +18,10 @@ const Accordian = () => {
     setShowContnet(showContent === idx ? null :idx)
   };
 
+  const handleShowPassword = ()=>{
+    setIsShow((prev)=> !prev)
+  }
+
   return (
     <>
       <h1>Below are the FAQs</h1>
@@ -29,6 +35,11 @@ const Accordian = () => {
           </div>
         );
       })}
+      <label>Enter the Input
+        <input value={text} onChange={(e)=> setText(e.target.value)} type={isshow ? 'text' :'password'}/>
+        <button onClick={()=> handleShowPassword()}>{!isshow ? "Show" : "Hide"}</button>
+      </label>
+      <p>Char count is : {text.length}</p>
     </>
   );
 };

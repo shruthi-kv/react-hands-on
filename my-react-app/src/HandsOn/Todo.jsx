@@ -24,9 +24,10 @@ const Todo = () => {
           placeholder="Enter the todo here..."
           value={text}
           onChange={(e) => setText(e.target.value)}
+          onKeyDown={(e)=> e.key==='Enter' && handleAdd()}
         />
       </label>
-      <button onClick={handleAdd}>Add</button>
+      <button disabled={!text.trim()} onClick={handleAdd}>Add</button>
       {todo.length > 0 && (
         <ul>
           {todo.map((item, index) => {

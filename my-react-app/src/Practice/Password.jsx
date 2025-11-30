@@ -6,9 +6,9 @@ const Password = () =>{
 
     return(
         <>
-        <lable> Enter your Password
+        <label> Enter your Password
                <input type={show ? 'text' :'password'}/>
-        </lable>
+        </label>
         <button onClick={()=> setIsShow((prev)=> !prev)}>{show ? 'Hide' : 'Show'}</button>
  
         </>

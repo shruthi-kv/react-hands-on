@@ -19,6 +19,7 @@ const StopWatch = () => {
   const handleReset = ()=>{
     handleStop();
     setTime(0)
+    handleStart()
   }
 
   useEffect(() => {

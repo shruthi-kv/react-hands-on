@@ -3,6 +3,8 @@ import Todo from './HandsOn/Todo';
 import Check from './HandsOn/Check';
 import Time from './HandsOn/Time';
 import Accordian from './HandsOn/Accordian';
+import Radio from './Practice/Radio';
+import Users from './Practice/Users'
 
 const Demo = ()=>{
 
@@ -11,8 +13,11 @@ const Demo = ()=>{
         {/* <Todo/> */}
         {/* <Check/> */}
         {/* <Time/> */}
-        <Accordian/>
+        {/* <Accordian/> */}
+        {/* <Radio/> */}
+        <Users/>
         </>
+
     )
 }
 

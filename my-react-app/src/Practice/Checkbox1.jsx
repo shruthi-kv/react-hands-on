@@ -19,7 +19,6 @@ const Checkbox1 = () => {
     }else{
       setSelected([...names])
     }
-    
   }
 
   return <>{
